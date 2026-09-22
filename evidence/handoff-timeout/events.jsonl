@@ -1,0 +1,15 @@
+{"time": 1790010818.376546, "event": "action_started", "step": 0, "action": "type"}
+{"time": 1790010818.4540398, "event": "checkpoint_verified", "step": 0, "checkpoint": "Member search"}
+{"time": 1790010818.455434, "event": "action_started", "step": 1, "action": "click"}
+{"time": 1790010818.6983452, "event": "intervention_requested", "capability": "read_savings_balance", "step": 1, "expected": "Member detail", "reason": "checkpoint_not_reached", "observation": {"states": ["Session locked"], "controls": [], "policy_blocked": false}}
+{"time": 1790010818.698982, "event": "control_transferred", "owner": "human"}
+{"time": 1790010820.993797, "event": "human_action", "action": "click", "target": "Unlock session"}
+{"time": 1790010893.576949, "event": "resume_rejected", "error_type": "TargetClosedError"}
+{"time": 1790010893.5819304, "event": "run_failed", "step": 1, "error_type": "TargetClosedError"}
+{"time": 1790010893.5874052, "event": "result", "status": "failure", "code": "TargetClosedError", "step": 1}
+{"time": 1790010900.6113186, "event": "action_started", "step": 0, "action": "type"}
+{"time": 1790010900.6894994, "event": "checkpoint_verified", "step": 0, "checkpoint": "Member search"}
+{"time": 1790010900.690222, "event": "action_started", "step": 1, "action": "click"}
+{"time": 1790010900.9086833, "event": "intervention_requested", "capability": "read_savings_balance", "step": 1, "expected": "Member detail", "reason": "checkpoint_not_reached", "observation": {"states": ["Session locked"], "controls": [], "policy_blocked": false}}
+{"time": 1790010900.9094355, "event": "control_transferred", "owner": "human"}
+{"time": 1790011021.0663753, "event": "result", "status": "paused", "code": "intervention_required", "step": 1}

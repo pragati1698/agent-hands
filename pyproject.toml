@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "agent-hands"
+version = "0.1.0"
+description = "Discover UI capabilities, replay without a model, and transfer live control"
+requires-python = ">=3.11"
+dependencies = ["playwright==1.51.0", "pydantic>=2.9,<3"]
+[project.scripts]
+hands = "hands.cli:main"
+[tool.setuptools.packages.find]
+include = ["hands*"]
+
+[tool.pytest.ini_options]
+markers = ["browser: requires a working local Chromium runtime"]

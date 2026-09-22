@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "artifact_version": "1.0.0",
+  "name": "read_savings_balance",
+  "app_family": "ledger-demo",
+  "app_version": "1",
+  "provenance": "fixture",
+  "inputs": {
+    "member_id": "member_id"
+  },
+  "steps": [
+    {
+      "action": "type",
+      "target": {
+        "strategy": "label",
+        "value": "Member ID",
+        "role": null
+      },
+      "parameter": "member_id",
+      "checkpoint": "Member search"
+    },
+    {
+      "action": "click",
+      "target": {
+        "strategy": "role",
+        "value": "Search",
+        "role": "button"
+      },
+      "parameter": null,
+      "checkpoint": "Member detail"
+    },
+    {
+      "action": "click",
+      "target": {
+        "strategy": "role",
+        "value": "Savings",
+        "role": "link"
+      },
+      "parameter": null,
+      "checkpoint": "Savings account"
+    }
+  ],
+  "outputs": {
+    "balance": {
+      "type": "decimal",
+      "target": {
+        "strategy": "label",
+        "value": "Balance",
+        "role": null
+      }
+    },
+    "currency": {
+      "type": "currency",
+      "target": {
+        "strategy": "label",
+        "value": "Currency",
+        "role": null
+      }
+    }
+  },
+  "success": "Savings account",
+  "business_outcomes": {
+    "Member not found": "member_not_found",
+    "Validation error": "invalid_member_id"
+  }
+}

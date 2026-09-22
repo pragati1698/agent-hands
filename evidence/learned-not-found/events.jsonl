@@ -1,0 +1,4 @@
+{"time": 1790010258.957261, "event": "action_started", "step": 0, "action": "type"}
+{"time": 1790010259.0410256, "event": "checkpoint_verified", "step": 0, "checkpoint": "Member search"}
+{"time": 1790010259.0417764, "event": "action_started", "step": 1, "action": "click"}
+{"time": 1790010259.2159472, "event": "result", "status": "business_outcome", "code": "member_not_found", "step": 1}

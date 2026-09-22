@@ -1,0 +1,89 @@
+{
+  "states": [
+    "Member search"
+  ],
+  "controls": [
+    {
+      "strategy": "label",
+      "value": "Member ID"
+    },
+    {
+      "strategy": "role",
+      "value": "Search",
+      "role": "button"
+    }
+  ],
+  "policy_blocked": false,
+  "structure": [
+    {
+      "tag": "h1",
+      "visible": true,
+      "children": 0
+    },
+    {
+      "tag": "h2",
+      "visible": true,
+      "children": 0
+    },
+    {
+      "tag": "form",
+      "visible": true,
+      "children": 3
+    },
+    {
+      "tag": "input",
+      "visible": false,
+      "children": 0
+    },
+    {
+      "tag": "table",
+      "visible": true,
+      "children": 1
+    },
+    {
+      "tag": "tr",
+      "visible": true,
+      "children": 1
+    },
+    {
+      "tag": "td",
+      "visible": true,
+      "children": 1
+    },
+    {
+      "tag": "table",
+      "visible": true,
+      "children": 1
+    },
+    {
+      "tag": "tr",
+      "visible": true,
+      "children": 2
+    },
+    {
+      "tag": "td",
+      "visible": true,
+      "children": 1
+    },
+    {
+      "tag": "label",
+      "visible": true,
+      "children": 0
+    },
+    {
+      "tag": "td",
+      "visible": true,
+      "children": 1
+    },
+    {
+      "tag": "input",
+      "visible": true,
+      "children": 0
+    },
+    {
+      "tag": "button",
+      "visible": true,
+      "children": 0
+    }
+  ]
+}

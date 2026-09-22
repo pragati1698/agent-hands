@@ -1,0 +1,197 @@
+{
+  "$defs": {
+    "Output": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "decimal",
+            "currency"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/$defs/Target"
+        }
+      },
+      "required": [
+        "type",
+        "target"
+      ],
+      "title": "Output",
+      "type": "object"
+    },
+    "Step": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "enum": [
+            "click",
+            "type"
+          ],
+          "title": "Action",
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/$defs/Target"
+        },
+        "parameter": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Parameter"
+        },
+        "checkpoint": {
+          "enum": [
+            "Member search",
+            "Member detail",
+            "Savings account"
+          ],
+          "title": "Checkpoint",
+          "type": "string"
+        }
+      },
+      "required": [
+        "action",
+        "target",
+        "checkpoint"
+      ],
+      "title": "Step",
+      "type": "object"
+    },
+    "Target": {
+      "additionalProperties": false,
+      "properties": {
+        "strategy": {
+          "enum": [
+            "label",
+            "role",
+            "text"
+          ],
+          "title": "Strategy",
+          "type": "string"
+        },
+        "value": {
+          "title": "Value",
+          "type": "string"
+        },
+        "role": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Role"
+        }
+      },
+      "required": [
+        "strategy",
+        "value"
+      ],
+      "title": "Target",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "artifact_version": {
+      "const": "1.0.0",
+      "default": "1.0.0",
+      "title": "Artifact Version",
+      "type": "string"
+    },
+    "name": {
+      "default": "read_savings_balance",
+      "title": "Name",
+      "type": "string"
+    },
+    "app_family": {
+      "const": "ledger-demo",
+      "default": "ledger-demo",
+      "title": "App Family",
+      "type": "string"
+    },
+    "app_version": {
+      "const": "1",
+      "default": "1",
+      "title": "App Version",
+      "type": "string"
+    },
+    "provenance": {
+      "enum": [
+        "fixture",
+        "live_llm"
+      ],
+      "title": "Provenance",
+      "type": "string"
+    },
+    "inputs": {
+      "additionalProperties": {
+        "const": "member_id",
+        "type": "string"
+      },
+      "default": {
+        "member_id": "member_id"
+      },
+      "title": "Inputs",
+      "type": "object"
+    },
+    "steps": {
+      "items": {
+        "$ref": "#/$defs/Step"
+      },
+      "maxItems": 20,
+      "minItems": 1,
+      "title": "Steps",
+      "type": "array"
+    },
+    "outputs": {
+      "additionalProperties": {
+        "$ref": "#/$defs/Output"
+      },
+      "title": "Outputs",
+      "type": "object"
+    },
+    "success": {
+      "const": "Savings account",
+      "default": "Savings account",
+      "title": "Success",
+      "type": "string"
+    },
+    "business_outcomes": {
+      "additionalProperties": {
+        "type": "string"
+      },
+      "default": {
+        "Member not found": "member_not_found",
+        "Validation error": "invalid_member_id"
+      },
+      "title": "Business Outcomes",
+      "type": "object"
+    }
+  },
+  "required": [
+    "provenance",
+    "steps",
+    "outputs"
+  ],
+  "title": "Capability",
+  "type": "object"
+}

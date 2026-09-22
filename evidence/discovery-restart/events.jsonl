@@ -1,0 +1,4 @@
+{"time": 1790009408.7550495, "event": "discovery_started", "provider": "openai", "model": "gpt-4.1-mini"}
+{"time": 1790009408.8101535, "event": "observation", "step": 0, "state": {"states": ["Member search"], "controls": [{"strategy": "label", "value": "Member ID"}, {"strategy": "role", "value": "Search", "role": "button"}], "policy_blocked": false}}
+{"time": 1790009411.9171598, "event": "model_failure", "error_type": "ValidationError", "http_status": null}
+{"time": 1790009411.985831, "event": "intervention_requested", "capability": "read_savings_balance", "step": 0, "expected": "Savings account", "reason": "model_unavailable", "observation": {"states": ["Member search"], "controls": [{"strategy": "label", "value": "Member ID"}, {"strategy": "role", "value": "Search", "role": "button"}], "policy_blocked": false}}

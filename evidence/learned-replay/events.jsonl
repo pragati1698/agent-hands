@@ -1,0 +1,8 @@
+{"time": 1790010205.1929762, "event": "action_started", "step": 0, "action": "type"}
+{"time": 1790010205.2708793, "event": "checkpoint_verified", "step": 0, "checkpoint": "Member search"}
+{"time": 1790010205.271647, "event": "action_started", "step": 1, "action": "click"}
+{"time": 1790010205.4597015, "event": "checkpoint_verified", "step": 1, "checkpoint": "Member detail"}
+{"time": 1790010205.460317, "event": "action_started", "step": 2, "action": "click"}
+{"time": 1790010205.571384, "event": "checkpoint_verified", "step": 2, "checkpoint": "Savings account"}
+{"time": 1790010205.5874004, "event": "run_completed", "status": "success", "output_names": ["balance", "currency"]}
+{"time": 1790010205.5882592, "event": "result", "status": "success", "code": "completed", "step": null}

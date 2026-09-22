@@ -1,0 +1,24 @@
+{
+  "states": [
+    "Session locked"
+  ],
+  "controls": [],
+  "policy_blocked": false,
+  "structure": [
+    {
+      "tag": "h1",
+      "visible": true,
+      "children": 0
+    },
+    {
+      "tag": "h2",
+      "visible": true,
+      "children": 0
+    },
+    {
+      "tag": "a",
+      "visible": true,
+      "children": 0
+    }
+  ]
+}

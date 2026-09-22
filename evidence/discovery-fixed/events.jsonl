@@ -1,0 +1,13 @@
+{"time": 1790010108.1325521, "event": "discovery_started", "provider": "openai", "model": "gpt-4.1-mini"}
+{"time": 1790010108.1988926, "event": "observation", "step": 0, "state": {"states": ["Member search"], "controls": [{"strategy": "label", "value": "Member ID"}, {"strategy": "role", "value": "Search", "role": "button"}], "policy_blocked": false}}
+{"time": 1790010110.6324494, "event": "model_decision", "step": 0, "kind": "act", "reason": "enter_input"}
+{"time": 1790010110.699615, "event": "checkpoint_verified", "step": 0, "checkpoint": "Member search"}
+{"time": 1790010110.7317803, "event": "observation", "step": 1, "state": {"states": ["Member search"], "controls": [{"strategy": "label", "value": "Member ID"}, {"strategy": "role", "value": "Search", "role": "button"}], "policy_blocked": false}}
+{"time": 1790010112.258232, "event": "model_decision", "step": 1, "kind": "act", "reason": "navigate"}
+{"time": 1790010112.372556, "event": "checkpoint_verified", "step": 1, "checkpoint": "Member detail"}
+{"time": 1790010112.4027662, "event": "observation", "step": 2, "state": {"states": ["Member detail"], "controls": [{"strategy": "role", "value": "Savings", "role": "link"}], "policy_blocked": false}}
+{"time": 1790010113.3720655, "event": "model_decision", "step": 2, "kind": "act", "reason": "navigate"}
+{"time": 1790010113.471424, "event": "checkpoint_verified", "step": 2, "checkpoint": "Savings account"}
+{"time": 1790010113.4996264, "event": "observation", "step": 3, "state": {"states": ["Savings account"], "controls": [], "policy_blocked": false}}
+{"time": 1790010114.9692173, "event": "model_decision", "step": 3, "kind": "done", "reason": "read_result"}
+{"time": 1790010114.9834223, "event": "discovery_completed", "artifact_provenance": "live_llm"}

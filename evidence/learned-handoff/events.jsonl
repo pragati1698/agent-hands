@@ -1,0 +1,12 @@
+{"time": 1790010406.016616, "event": "action_started", "step": 0, "action": "type"}
+{"time": 1790010406.0956242, "event": "checkpoint_verified", "step": 0, "checkpoint": "Member search"}
+{"time": 1790010406.0969946, "event": "action_started", "step": 1, "action": "click"}
+{"time": 1790010406.3355107, "event": "intervention_requested", "capability": "read_savings_balance", "step": 1, "expected": "Member detail", "reason": "checkpoint_not_reached", "observation": {"states": ["Session locked"], "controls": [], "policy_blocked": false}}
+{"time": 1790010406.3365364, "event": "control_transferred", "owner": "human"}
+{"time": 1790010447.7053976, "event": "human_action", "action": "click", "target": "Unlock session"}
+{"time": 1790010479.478866, "event": "human_navigation", "destination": "allowlisted target; query omitted"}
+{"time": 1790010479.4990654, "event": "resume_verified", "step": 1, "checkpoint": "Member detail"}
+{"time": 1790010479.4997048, "event": "action_started", "step": 2, "action": "click"}
+{"time": 1790010479.6184845, "event": "checkpoint_verified", "step": 2, "checkpoint": "Savings account"}
+{"time": 1790010479.6348803, "event": "run_completed", "status": "success", "output_names": ["balance", "currency"]}
+{"time": 1790010479.6359892, "event": "result", "status": "success", "code": "completed", "step": null}
